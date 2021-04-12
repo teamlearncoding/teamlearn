@@ -8,18 +8,8 @@
         <div class="navbar">
                 <h2><a v-on:click=render_about() href="" id="about-link">About </a><a v-on:click=render_contact() href="" id="contact-link"> Contact </a><a href="" id="learn-link">  Learn</a></h2>
         </div>
-
-
         <hr/>
-
-
-        
-
     </header>
-
-    <footer>
-        <div class="bottom-logo"></div>
-    </footer>
 </template>
 
 
