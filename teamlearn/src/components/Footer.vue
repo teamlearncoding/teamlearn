@@ -2,6 +2,7 @@
     <footer>
         <div class="footer">
             <hr/>
+
             <div class="what-we-do">
                 <blockquote>
                     Bringing code <br/>
@@ -9,6 +10,11 @@
                     <b>For everyday people</b><br/>
                 </blockquote>
             </div>
+
+            <div class="socials">
+                <i class="fab fa-discord"></i>
+            </div>
+
         </div>    
     </footer>    
 </template>
@@ -22,8 +28,9 @@ export default {
 
 
 <style scoped>
-.what-we-do{
 
+.what-we-do{
+    text-align: left;
 }
 
 blockquote {
@@ -33,6 +40,11 @@ blockquote {
   margin-left: 40px;
   margin-right: 40px;
   font-style: oblique;
+}
+
+.socials{
+    color: black;
+    align-content: center;
 }
 
 </style>

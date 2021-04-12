@@ -30,10 +30,5 @@ export default {
 </script>
 
 
-<style scope>
-.footer-comp{
-    align-content: center;
-}
-
-
+<style scoped>
 </style>
