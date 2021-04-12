@@ -6,7 +6,7 @@
         </div>
 
         <div class="navbar">
-                <h2 v-on:click=render_about()><a href="" id="about-link">About </a><a href="" id="contact-link"> Contact</a></h2>
+                <h2><a v-on:click=render_about() href="" id="about-link">About </a><a v-on:click=render_contact() href="" id="contact-link"> Contact </a><a href="" id="learn-link">  Learn</a></h2>
         </div>
 
 
@@ -63,8 +63,13 @@ export default {
 }
 
 
+#learn-link{
+    text-decoration: none;
+    color: black;
+}
+
 .navbar{
-    margin-left: 50%;
+    margin-left: 60%;
     margin-top: 4%
 }
 
