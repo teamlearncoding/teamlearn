@@ -1,4 +1,3 @@
-# teamlearn
 
 ## Project setup
 ```
