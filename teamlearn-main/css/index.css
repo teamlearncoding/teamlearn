@@ -134,3 +134,11 @@ hr{
 .courses{
     font-family: "Roboto", sans-serif;
 }
+
+
+.container-buttons{
+    width: 100%;
+    margin-top: 200px;
+    word-spacing: 100px;
+    text-align: center;
+}
