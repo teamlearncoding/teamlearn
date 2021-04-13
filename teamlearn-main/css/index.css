@@ -47,11 +47,25 @@ a.btn{
     transition: all 0.2s;
 }
 a.btn:hover{
-    border-color: rgba(blue,blue,blue,blue);
+    color: lightblue;
 }
 @media all and (max-width:30em){
 a.btn{
     display:block;
     margin:0.2em auto;
     }
+}
+
+hr{
+    margin-top: 500px;
+}
+
+
+#founder{
+    text-decoration: none;
+    color: black;
+}
+
+.history{
+    text-align: center;
 }
