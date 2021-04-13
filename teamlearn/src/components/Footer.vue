@@ -28,12 +28,12 @@ export default {
 <style scoped>
 
 .what-we-do{
-    text-align: left;
+    text-align: center;
 }
 
 blockquote {
   display: block;
-  margin-top: 1em;
+  margin-top: 5em;
   margin-bottom: 1em;
   margin-left: 40px;
   margin-right: 40px;

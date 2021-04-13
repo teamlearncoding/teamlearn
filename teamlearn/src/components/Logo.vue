@@ -1,6 +1,6 @@
 <template>
     <div class="logo">
-        <img src="../../public/img/teamlearn.png" alt="top-left-logo" id="main-logo">
+        Logo
     </div>
 </template>
 

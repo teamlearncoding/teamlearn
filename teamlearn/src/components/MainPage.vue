@@ -3,11 +3,15 @@
         <TopBar />
     </div>
 
-    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-    
+
     <div class="learn-comp">
         <Learn />
     </div>
+
+
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    
+    
 
     <div class="footer-comp">
         <Footer />
@@ -25,6 +29,7 @@ export default {
     components: {
         TopBar,
         Footer,
+        Learn,
     }
 }
 </script>
