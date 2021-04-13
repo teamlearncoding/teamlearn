@@ -1,0 +1,26 @@
+@font-face {
+    font-family: "Cooper Black";
+    src: url("/fonts/cooper-black.otf");
+  }
+  
+h1 {
+    font-family: "Cooper Black", serif;
+}
+
+.name{
+    font-family:monospace;
+    font-size: 50px;
+}
+
+
+.main{
+    text-align: left;
+    margin-top: 200px;
+    margin-left: 100px;
+}
+
+
+#slogan{
+    font-family:'Courier New', Courier, monospace;
+    font-weight:200;
+}
