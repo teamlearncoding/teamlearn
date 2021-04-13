@@ -142,3 +142,13 @@ hr{
     word-spacing: 100px;
     text-align: center;
 }
+
+
+.overview{
+    visibility: visible;
+}
+
+
+.courses{
+    visibility: hidden;
+}
