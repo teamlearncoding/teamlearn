@@ -3,7 +3,7 @@
  ## What is TeamLearn
 
  TeamLearn is a "company"/website trying to help people from anywhere in the world learn how to code. It doesn't matter what's your race, religion, age. All that matters
-is that if you want to code, we got you covered.
+is that if you want to learn coding, we got you covered.
 
 
  ## How to read the codebase
