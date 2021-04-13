@@ -11,9 +11,7 @@
                 </blockquote>
             </div>
 
-            <div class="socials">
-                <i class="fab fa-discord"></i>
-            </div>
+            
 
         </div>    
     </footer>    
@@ -42,9 +40,5 @@ blockquote {
   font-style: oblique;
 }
 
-.socials{
-    color: black;
-    align-content: center;
-}
 
 </style>
