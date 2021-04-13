@@ -13,5 +13,5 @@ is that if you want to code, we got you covered.
    For now it's just plain javascript html and css.
 
 
- ## Leaving note
-   And now for a leaving note, please don't forget why you started coding, you started coding because you wanted to build something that helps people in the real world. Don't forget that. Thank you -Arin
+ ## Final note
+   And now for the final note, please don't forget why you started coding, you started coding because you wanted to build something that helps people in the real world. Don't forget that. Thank you -Arin
