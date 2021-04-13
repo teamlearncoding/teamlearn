@@ -66,6 +66,11 @@ hr{
     color: black;
 }
 
+#founder:hover{
+    color: purple;
+}
+
 .history{
     text-align: center;
+    font-family: "Roboto", sans-serif;
 }
