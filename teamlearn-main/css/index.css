@@ -146,9 +146,20 @@ hr{
 
 .overview{
     visibility: visible;
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+    font-weight:200;
 }
 
 
 .courses{
     visibility: hidden;
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+    font-weight:200;
+}
+
+#contributing-link{
+    text-decoration:underline;
+    color: black;
 }
