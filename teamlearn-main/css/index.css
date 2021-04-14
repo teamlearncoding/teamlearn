@@ -168,4 +168,60 @@ hr{
 #c-course-c-img{
     max-width: 8%;
     max-height: 8%;
+    border-radius: 35px;
+    border: 2px solid lightblue;
+    padding: 20px;
+    width: 8%;
+    height: 8%;
+}
+
+.course-main-page{
+    display: flex;
+    flex-direction: column;
+    background: white;
+}
+
+.course-link-main-page{
+    font-family: serif;
+    text-decoration: none;
+    color: black;
+}
+
+.course-link-main-page{
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.course-overview{
+    align-items: center;
+    font-family:monospace;
+}
+
+.course-goto-link-btn{
+    padding: 15px 22px;
+    background: #1ABC9C;
+    border-radius: 100px;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+    border: 2px solid white;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+    font-family: sans-serif
+}
+
+
+.course-goto-link-btn:hover{
+    background: white;
+    color: black;
+    border: 2px solid #1ABC9C;
+    transition: all 0.7s;
+    
 }
