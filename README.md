@@ -10,7 +10,7 @@ is that if you want to learn coding, we got you covered.
    Right now the codebase is pretty simple, we only got css, html and js folder which are pretty self explanatory. But in the future we would want to improve our website as much as possible
 
  ## How to contribute
-  If you want to contribute with a lesson you can either code that lesson yourself or give the materials to the Founder and he will take care of it.
+  If you want to contribute with a lesson you can either code that lesson yourself(in that case you have to sign the course) or give the materials to the Founder and he will take care of it. But if you just want to fix a bug, you can create an issue and tell us what the problem is.
 
  ## Technologies used
    For now it's just plain javascript html and css.
