@@ -175,17 +175,14 @@ hr{
     height: 8%;
 }
 
+
 .course-main-page{
     display: flex;
     flex-direction: column;
     background: white;
 }
 
-.course-link-main-page{
-    font-family: serif;
-    text-decoration: none;
-    color: black;
-}
+
 
 .course-link-main-page{
     text-decoration: none;
