@@ -1,11 +1,11 @@
 #c-course-c-img{
-    max-width: 8%;
-    max-height: 8%;
-    border-radius: 35px;
+    max-width: 10%;
+    max-height: 10%;
+    border-radius: 55px;
     border: 2px solid lightblue;
     padding: 20px;
-    width: 8%;
-    height: 8%;
+    width: 10%;
+    height: 10%;
 }
 
 .course-main-page{
@@ -13,6 +13,7 @@
     display: flex;
     flex-direction: column;
     background: white;
+    align-items: center;
 }
 
 .course-link-main-page{
@@ -62,9 +63,18 @@
 
 
 .container-all-courses{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-gap: 40px;
-    margin-bottom: 60px;
-    width: 100%;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: start;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    max-width: 800px
 }
