@@ -163,3 +163,9 @@ hr{
     text-decoration:underline;
     color: black;
 }
+
+
+#c-course-c-img{
+    max-width: 8%;
+    max-height: 8%;
+}
