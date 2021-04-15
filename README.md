@@ -7,7 +7,8 @@ is that if you want to learn coding, we got you covered.
 
 
  ## How to read the codebase
-   Right now the codebase is pretty simple, we only got css, html and js folder which are pretty self explanatory. But in the future we would want to improve our website as much as possible
+  Recently we've added an express backend so now it makes the code a little bit harder to read but still pretty simple. In the public directory there are all the
+files that the website needs to function. Right outside of that is the app.js file(there's where the express code is). 
 
  ## How to contribute
   If you want to contribute with a lesson you can either code that lesson yourself(in that case you have to sign the course) or give the materials to the Founder and he will take care of it. But if you just want to fix a bug, you can create an issue and tell us what the problem is.
