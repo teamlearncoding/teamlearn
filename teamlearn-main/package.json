@@ -1,0 +1,14 @@
+{
+  "name": "teamlearn",
+  "version": "1.0.0",
+  "description": "teamlearn is a platform where people can learn how to code",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Arin Grigoras",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
