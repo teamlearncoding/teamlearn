@@ -100,10 +100,11 @@
 
 .learn-course ul{
     list-style: none;
+    display: inline;
 }
 
-.learn-course li{
-    display: inline-block;
+.learn-course{
+    margin-left: 6em;
 }
 
 
