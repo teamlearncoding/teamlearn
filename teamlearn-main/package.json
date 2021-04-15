@@ -4,11 +4,16 @@
   "description": "teamlearn is a platform where people can learn how to code",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "start": "node app.js",
+    "dev": "nodemon app.js"
   },
   "author": "Arin Grigoras",
   "license": "MIT",
   "dependencies": {
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
   }
 }
