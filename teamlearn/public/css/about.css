@@ -53,3 +53,12 @@
     text-align: center;
     margin-right: 7em;
 }
+
+.social-media{
+    text-align: center;
+}
+
+.social-media img{
+    width: 5%;
+    height: 5%;
+}
