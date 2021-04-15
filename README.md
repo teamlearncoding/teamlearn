@@ -26,10 +26,10 @@ files that the website needs to function. Right outside of that is the app.js fi
   If you want to contribute with a lesson you can either code that lesson yourself(in that case you have to sign the course) or give the materials to the Founder and he will take care of it. But if you just want to fix a bug, you can create an issue and tell us what the problem is.
 
  ## Technologies used
-  -Express
-  -Vanila JavaScript
-  -Html
-  -Css
+  * Express
+  * Vanila JavaScript
+  * Html
+  * Css
 
  ## Final note
    And now for the final note, please don't forget why you started coding, you started coding because you wanted to build something that helps people in the real world. Don't forget that. Thank you -Arin
