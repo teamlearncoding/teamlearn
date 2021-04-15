@@ -5,6 +5,14 @@
  TeamLearn is a "company"/website trying to help people from anywhere in the world learn how to code. It doesn't matter what's your race, religion, age. All that matters
 is that if you want to learn coding, we got you covered.
 
+ ## Installation guide
+   First make sure you have npm and git installed. Then run the following commands
+      git clone https://github.com/teamlearncoding/teamlearn.git
+      npm run dev
+
+   or
+
+      npm run start
 
  ## How to read the codebase
   Recently we've added an express backend so now it makes the code a little bit harder to read but still pretty simple. In the public directory there are all the
