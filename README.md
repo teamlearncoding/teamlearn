@@ -11,7 +11,7 @@ is that if you want to learn coding, we got you covered.
 
       git clone https://github.com/teamlearncoding/teamlearn.git
       
-
+      cd teamlearn
       npm run dev
 
    or
