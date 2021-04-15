@@ -7,7 +7,11 @@ is that if you want to learn coding, we got you covered.
 
  ## Installation guide
    First make sure you have npm and git installed. Then run the following commands
+      
+
       git clone https://github.com/teamlearncoding/teamlearn.git
+      
+
       npm run dev
 
    or
