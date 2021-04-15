@@ -4,8 +4,18 @@
     border-radius: 55px;
     border: 2px solid lightblue;
     padding: 20px;
-    width: 10%;
-    height: 10%;
+    width: 250%;
+    height: 250%;
+}
+
+#python-course-img{
+    max-width: 300%;
+    max-height: 300%;
+    border-radius: 55px;
+    border: 2px solid lightblue;
+    padding: 20px;
+    width: 245%;
+    height: 245%;
 }
 
 .course-main-page{
@@ -88,13 +98,18 @@
 }
 
 
-.c-course{
-    margin-left: 5em;
-    margin: 50px;
+.learn-course ul{
+    list-style: none;
 }
 
-.container-all-courses{
+.learn-course li{
     display: inline-block;
+}
+
+
+.c-course{
+    margin-left: 10em;
+    margin: 50px;
 }
 
 
@@ -114,4 +129,9 @@
 }
 #rightbox{
     float:right;
-}   
+}
+
+
+.python-course{
+    display:block;
+}
