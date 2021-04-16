@@ -4,67 +4,109 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="c1.css">
+    <link rel="stylesheet" href="../../../css/style.css">
     <title>C-Chapter1</title>
 </head>
 <body>
-    <div class="introduction">
-        <h1>First Chapter of the C course</h1>
-        <p>To start off like any normal programmer we need to create a "Hello world!" program.<br><br></p>
-    </div>
 
-    <div class="hello-world">
-        <pre>
-        <code>
-        #include <span id = "stdio"><stdio.h></span>
+    <header>
+        <div class="topnav">
+            <a href="../../../profile.html">Profile</a>
+            <a class="active" href="../../../learn.html">Learn</a>
+            <a href="../../../about.html">About</a>
+            <a href="../../../index.html">Home</a>
+        </div>
+        <br/>
+        <br/>
+        <br/>
 
-        int main()
-        {
+        <center>
+            <div class="course-img">
+                <img id="image-c" src="../../../assets/Images/logo-c-1.png" alt="c-img">
+            </div>
+        </center>
+        <br/>
+        <br/>
+    </header>
+
+    <div class="container-c1">
+
+        <center>
+            <div class="introduction">
+                <h1>First Chapter of the C course</h1>
+                <p>To start off like any normal programmer we need to create a "Hello world!" program.<br><br></p>
+            </div>
+        </center>
+
+        <div class="code">
+            <pre>
+            <code>
+    #include <span id = "stdio"><stdio.h></span>
+
+    int main(){
         printf("Hello World!");
 
         return 0;
-        }
-        </code>
-        </pre>
-    </div>
-    
-    
-    <div class="breaking-it-down">
-        <h1>Breaking it down</h1>
-        <p>
-            To understand what is going on, we must break it down into pieces.
-            <br>
-        </p>
-
-        <p>
-            To start off, <code><span id = "include"></span></code> is the first step. It is the <b>Header File</b> as it's called.<br/>
-            It's where the <code>printf()</code> function is <i>defined</i>.
-        </p>
-
-        <pre>
-        <code id="main">
-        int main(){
-        
-        }
-        </code>
-        <br>
-        </pre>
-
-        <p>
-            This is the main method. All the code we put here will get run at start time
-            <br>
-        </p>
-
-        <p>
-            Then, inside the main function, we add: 
-            <code id="printf">
-                printf("Hello world!");
-                <br>
+    }
             </code>
-            printf prints somthing to the screen. Notice the ';'.
-            <br/>
-            this is used to terminate a statement in C.<br>
-        </p>
+            </pre>
+        </div>
         
+        <center>
+            <div class="breaking-it-down">
+                <h1>Breaking it down</h1>
+                <p>
+                    To understand what is going on, we must break it down into pieces.
+                    <br>
+                </p>
+
+                <p>
+                    To start off, <code><span id = "include"></span></code> is the first step. It is the <b>Header File</b> as it's called.<br/>
+                    It's where the <code>printf()</code> function is <i>defined</i>.
+                    <br/><br/>
+                </p>
+        
+            <p id="code">
+                int main(){<br/>
+                    <br/>
+            }
+            </p>
+
+            <p>
+                This is the main method. All the code we put here will get run at start time
+                <br>
+            </p>
+
+                <p>
+                    Then, inside the main function, we add:<br/>
+                    <br/>
+                    <code id="printf">
+                        printf("Hello world!");
+                        <br>
+                    </code>
+                    <br/>
+                    printf prints somthing to the screen. Notice the ;
+                    <br/>
+                    This is used to terminate a statement in C.<br>
+                </p>
+                <br/>
+                <br/>
+                <br/>
+            </center>
+        </div>
+
+
+        <footer>
+            <center>
+                <div class="btns">
+                    <a id="continue" href=""> <!--This is supposed to be next lesson in the C course-->
+                        <h2>Continue</h2>
+                    </a>
+                </div>
+            </center>
+        </footer>
+
     </div>
 
 
