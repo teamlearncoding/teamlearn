@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/about.css">
+    <script src="./js/index.js"></script>
     <title>TeamLearn-About</title>
 </head>
 <body>
@@ -48,9 +49,9 @@
                     How to become a contributor?
                 </b>
                 <p>
-                    You can become a contributor by either <a href="https://github.com/teamlearncoding" style="color: black;">Joining GitHub Org.</a>
+                    You can become a contributor by either <a onclick="redirect_to_org()" href="" style="color: black;">Joining GitHub Org.</a>
                     <br/>
-                    or by just <a href="https://github.com/teamlearncoding/teamlearn" style="color:black;">Forking the Project</a>
+                    or by just <a onclick="redirect_to_repo()" href="" style="color:black;">Forking the Project</a>
                 </p>
             </div>
 
@@ -62,7 +63,7 @@
     <footer>
         <div class="social-media">
             <hr/>
-            <a id="ig" href="https://www.instagram.com/teamlearncodingofficial/">
+            <a onclick="redirect_to_ig()" id="ig" href="">
                 <img src="assets/Images/instagram.png" alt="instagram" id="instagram">
             </a>
             <hr/>
