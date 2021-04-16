@@ -1,0 +1,47 @@
+#C{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+*{
+    font-family: sans-serif;
+}
+
+.courses-main{
+    text-align: center;
+}
+
+#image-c{
+    border-radius: 50%;
+    max-width: 10%;
+    max-height: 10%;
+    height:10%;
+    width:10%;
+}
+
+.container-chapters{
+    -webkit-box-flex: 1;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    position: relative;
+}
+
+.chapter{
+    background-color: white;
+    border-radius: 10px solid lightblue;
+    margin-top: 5em;
+}
+
+
+.vl{
+    border-left: 2px solid black;
+    height: 2em;
+    position: absolute;
+    left: 50%;
+}
+
+
+#link-to-chap{
+    text-decoration: none;
+    color: black;
+}
