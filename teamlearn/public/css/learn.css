@@ -1,14 +1,20 @@
-#course-img{
+#c{
     max-width: 250%;
     max-height: 250%;
     border-radius: 55px;
     border: 2px solid lightblue;
     padding: 20px;
-    width: 250%;
-    height: 250%;
+    width: 10%;
+    height: 10%;
+    margin-left: 43%;
 }
 
-#python-course-img{
+.what-courses{
+    font-family: sans-serif;
+    text-align: center;
+}
+
+#python{
     max-width: 300%;
     max-height: 300%;
     border-radius: 55px;
