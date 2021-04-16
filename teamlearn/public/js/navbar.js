@@ -1,5 +1,5 @@
 var navbar = document.createElement('navbar');
-window.onload = function() {
+window.onload = () => {
   navbar.innerHTML = `
   <header>
       <div class="topnav">
@@ -10,5 +10,5 @@ window.onload = function() {
       </div>
   </header>
   `;
-}
+};
 document.addEventListener('DOMContentLoaded', window.onload);
