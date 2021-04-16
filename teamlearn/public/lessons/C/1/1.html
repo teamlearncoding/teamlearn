@@ -7,6 +7,75 @@
     <title>C-Chapter1</title>
 </head>
 <body>
-    <h1>First Chapter of the C course</h1>
+    <div class="introduction">
+        <h1>First Chapter of the C course</h1>
+        <p>To start off like any normal programmer we need to create a "Hello world!" program.<br><br></p>
+    </div>
+
+    <div class="hello-world">
+        <pre>
+        <code>
+        #include <span id = "stdio"><stdio.h></span>
+
+        int main()
+        {
+        printf("Hello World!");
+
+        return 0;
+        }
+        </code>
+        </pre>
+    </div>
+    
+    
+    <div class="breaking-it-down">
+        <h1>Breaking it down</h1>
+        <p>
+            To understand what is going on, we must break it down into pieces.
+            <br>
+        </p>
+
+        <p>
+            To start off, <code><span id = "include"></span></code> is the first step. It is the <b>Header File</b> as it's called.<br/>
+            It's where the <code>printf()</code> function is <i>defined</i>.
+        </p>
+
+        <pre>
+        <code id="main">
+        int main(){
+        
+        }
+        </code>
+        <br>
+        </pre>
+
+        <p>
+            This is the main method. All the code we put here will get run at start time
+            <br>
+        </p>
+
+        <p>
+            Then, inside the main function, we add: 
+            <code id="printf">
+                printf("Hello world!");
+                <br>
+            </code>
+            printf prints somthing to the screen. Notice the ';'.
+            <br/>
+            this is used to terminate a statement in C.<br>
+        </p>
+        
+    </div>
+
+
+ <script>
+ var include = document.getElementById("include");
+ include.textContent = "#include <stdio.h>";
+
+ var std = document.getElementById("stdio");
+ std.textContent = "<stdio.h>";
+ </script>
+
+
 </body>
 </html>
