@@ -13,7 +13,12 @@ function check(field) {
     var fieldData = field.value;
 
     if(fieldData === "printf"){
-        alert("Well done");
+        
+        if(confirm("Well done")){
+            window.open(""); //This is supposed to be the next lesson(which isn't out yet)
+            return true;
+        }
+
         return true;
     }else{
         alert("Incorrect! Please try again");
