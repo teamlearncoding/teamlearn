@@ -30,5 +30,10 @@ files that the website needs to function. Right outside of that is the app.js fi
   * Html
   * Css
 
+
+ ## Donating
+  if you want to donate you will donate to the founders account and he will send a part of the money to the other contributors based on how much work they've put in.
+
+
  ## Final note
    And now for the final note, please don't forget why you started coding, you started coding because you wanted to build something that helps people in the real world. Don't forget that. Thank you -Arin
