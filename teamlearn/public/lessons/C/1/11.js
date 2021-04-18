@@ -1,7 +1,7 @@
 function validate(form) {
     var codeField = form.code;
 
-    if (isNotEmpty(codeField)){
+    if (check(codeField)){
        return true;
     }
     return false;
@@ -12,16 +12,19 @@ function check(field) {
 
     var fieldData = field.value;
 
-    if(fieldData === "printf"){
+    if(fieldData === ""){
+        alert("The prompt cannot be left empty");
         
-        if(confirm("Well done")){
-            window.open(""); //This is supposed to be the next lesson(which isn't out yet)
-            return true;
-        }
-
-        return true;
-    }else{
-        alert("Incorrect! Please try again");
         return false;
     }
+
+    if(fieldData === "printf"){
+        
+        alert("Well done");
+
+        return true;
+    }
+    
+    alert("Incorrect! Please try again");
+    return false;
 }
