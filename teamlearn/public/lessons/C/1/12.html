@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../../css/style.css">
     <link rel="stylesheet" href="c1.css">
+    <script src="../../../js/copy.js"></script>
     <title>C-Chapter1</title>
 </head>
 <body>
@@ -64,8 +65,11 @@
             </center>
 
                 <div class="code">
+                    <button onclick="return copy()">
+                        Copy Code-Snippet
+                    </button>
                     <pre>
-                        <code>
+                        <code id="code-snippet">
             #include <span id="stdio"></span>
 
             int main(){
