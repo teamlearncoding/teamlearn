@@ -66,21 +66,26 @@
                 <div class="code">
                     <pre>
                         <code>
-            int integer = 1;
-            float floating_point = 12.2;
-            double float_times_two = 155.66;
-            //Characters are surrounded
-            //by single quotes ''
-            char grade = 'A';
+            #include <span id="stdio"></span>
 
-            //%d is for integers
-            //%f for floats and doubles
-            //%c for characters
-            //\n means a new line
-            printf("%d\n", integer);
-            printf("%f\n", floating_point);
-            printf("%f\n", float_times_two);
-            printf("%c\n", grade)
+            int main(){
+
+                int integer = 1;
+                float floating_point = 12.2;
+                double float_times_two = 155.66;
+                //Characters are surrounded
+                //by single quotes ''
+                char grade = 'A';
+
+                //%d is for integers
+                //%f for floats and doubles
+                //%c for characters
+                //\n means a new line
+                printf("%d\n", integer);
+                printf("%f\n", floating_point);
+                printf("%f\n", float_times_two);
+                printf("%c\n", grade)
+            }
                         </code>
                     </pre>
                 </div>
@@ -92,8 +97,16 @@
 
     <center>
         <footer>
-            
+            <div class="btns">
+                <a id="continue" href="./121.html"> <!--This is supposed to be next lesson in the C course-->
+                    <h2>Continue</h2>
+                </a>
+            </div>
         </footer>
-    </center>    
+    </center>
+<script>
+    var std = document.getElementById("stdio");
+    std.textContent = "<stdio.h>";
+</script>
 </body>
 </html>
