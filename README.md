@@ -1,6 +1,10 @@
 # TeamLearn
 
 
+ ## Rarer commits
+   I will commit to the project more rarely because I fell kind of sick.
+
+
  ## What is TeamLearn
 
  TeamLearn is a "company"/website trying to help people from anywhere in the world learn how to code. It doesn't matter what's your race, religion, age. All that matters
