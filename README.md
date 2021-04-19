@@ -1,8 +1,7 @@
 # TeamLearn
 
 
- ## Rarer commits
-   I will commit to the project more rarely because I fell kind of sick.
+
 
 
  ## What is TeamLearn
