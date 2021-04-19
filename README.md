@@ -1,7 +1,5 @@
 # TeamLearn
 
- ## Gave up the project
-  I have decided to give up on the project because reddit has given me so much hate. If you still think it's a good idea you can take over the leadership anytime you want. Thank you.
 
  ## What is TeamLearn
 
