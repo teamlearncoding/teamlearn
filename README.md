@@ -1,7 +1,10 @@
 # TeamLearn
 
- ## Gave up the project
-  I have decided to give up on the project because reddit has given me so much hate. If you still think it's a good idea you can take over the leadership anytime you want. Thank you.
+
+ ## Why im not contributing that much anymore?
+   I don't know tbh. It just started getting really boring. ps: web dev isn't my main thing and I often get bored by it. So if you want to contribute to it,
+go ahead. I will online most of the time and accept or deny your ideas. Much love <3
+
 
  ## What is TeamLearn
 
