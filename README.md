@@ -1,9 +1,7 @@
 # TeamLearn
 
 
- ## Why im not contributing that much anymore?
-   I don't know tbh. It just started getting really boring. ps: web dev isn't my main thing and I often get bored by it. So if you want to contribute to it,
-go ahead. I will online most of the time and accept or deny your ideas. Much love <3
+
 
 
  ## What is TeamLearn
