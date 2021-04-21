@@ -5,8 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Profile</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"> 
 <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet"> 
@@ -80,6 +78,8 @@ input[type=submit] {
     <header>
         <nav>
             <div class="topnav">
+		    <a id = "profile">Sign in!
+		    </a>    
                 <a class="active" href="profile.html">Profile</a>
                 <a href="./learn.html">Learn</a>
                 <a href="./about.html">About</a>
@@ -98,12 +98,12 @@ input[type=submit] {
     <label for="psw">Password</label>
     <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
     
-    <input type="submit" value="Sign In!" id = "sign-button">
+    <a href = "https://teamlearncoding.github.io/teamlearn/teamlearn/public/"><input type="submit" value="Sign In!" id = "sign-button"></a>
   </form>
 </div>
 
 <div id="message">
-  <h3>Password must contain the following:</h3>
+  <h3>Your password must contain the following:</h3>
   <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
   <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
   <p id="number" class="invalid">A <b>number</b></p>
@@ -174,30 +174,34 @@ myInput.onkeyup = function() {
     
     // Creates the db and table
     var db = new SQL.Database();
-    db.run("CREATE TABLE todos (id INTEGER PRIMARY KEY AUTOINCREMENT, item TEXT);");
+    db.run("CREATE TABLE user_datas (id INTEGER PRIMARY KEY AUTOINCREMENT, item TEXT);");
   
     // Expects a todo (string) and inserts in db
-    var insertTodo = function(todo) {
-      db.run("INSERT INTO todos (item) VALUES (?)", [todo]);  
+    var insertTodo = function(user_data) {
+      db.run("INSERT INTO user_datas (item) VALUES (?)", [user_data]);  
     };
   
     // Return a list of todos (array of strings)
     var getAllTodos = function() {
-      var results = db.exec("SELECT item FROM todos");
-      var todos = [];
+      var results = db.exec("SELECT item FROM user_datas");
+      var deeta = [];
       for (var i = 0; i < results[0].values.length; i++) {
         todos.push(results[0].values[i]);
       }
-      return todos;
+      return deeta;
     };
     
     // Hooks up the submit button
     var form = document.getElementById("log-form");
     form.addEventListener("submit", function(e) {
+	    
         e.preventDefault();
         insertTodo(document.getElementById("sign-button").value);
         displayTodos(getAllTodos());
         form.reset();
+	var usr = document.getElementById("usrname");
+	var id = document.getElementById("profile");   
+	id.textContent = usr.textContent;      
     });
     
 </script>
