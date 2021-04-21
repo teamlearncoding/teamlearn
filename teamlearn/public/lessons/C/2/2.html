@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../../css/chapters.css">
     <link rel="stylesheet" href="../../../css/style.css">
+    <link rel="stylesheet" href="../../../css/chapters.css">
+    <script src="../../../js/copy.js"></script>
     <title>C-Chapter2</title>
 </head>
 <body>
@@ -17,5 +18,116 @@
             <a href="../../../index.html">Home</a>
         </div>
     </header>
+
+    <center>
+        <main>
+            <div class="course-img">
+                <img id="image-c" src="../../../assets/Images/logo-c-1.png" alt="c-img">
+            </div>
+
+            <div class="introduction">
+                <h1>
+                    Second Chapter of the C course
+                    <br/>
+                    Lesson 1
+                    <br/><br/>
+                </h1>
+
+                <h2>
+                    Taking input(scanf)
+                </h2>
+            </div>
+
+            <div class="lesson">
+                <p>
+                    <b>
+                        Taking input
+                    </b>
+                    
+                    is a very important aspect of programming. If you couldn't take input from the user
+                    <br/>
+                    I wouldn't be able to write this to help you learn programming.
+                    
+                </p>
+
+                <p>
+                    With that said there quite a bit of ways to get input from the user.
+                    The first one we're gonna talk about is 
+                    <code>
+                        scanf()
+                    </code>.
+                    <br/>
+                    scanf can take any kind of input. Numbers, strings, characters, floating point numbers, anything.
+                    <br/>
+                    So let's see an example
+                    
+                </p>
+
+                <br/>
+                <br/>
+            </center>
+
+            <div class="code" style="margin-left: 45%;">
+                <button onclick="return copy()">
+                    Copy Code-Snippet
+                </button>
+                <pre>
+                    <code id="code-snippet">
+#include <span id="stdio"></span>
+
+int main(){
+    int age;
+    printf("What's your age? ");
+    scanf("%d", &age);
+
+    printf("%d\n", age);
+                
+}
+                    </code>
+                </pre>
+            </div>
+            <br/><br/>
+
+            <center>
+                <p>
+                    This is a very simple program just initializing a variable called age. Then prompting the user to input their age.
+                    <br/>
+                    And finally printing out their age.
+                    <br/>
+                    But notice the &(ampersand) when we're using scanf(). To understand why that's there lets see how scanf() works.
+                    <br/>
+                    scanf takes in the first characters/numbers up until to the first space. And it needs a <b>placeholder</b> to know what data type it's looking for.
+                    <br/>
+                    %d/%s/%f/%c.
+                    <br/>
+                    The &(ampersand) is used to store the value of the input into the variables <b>memory location</b>. And the memory location of a variable
+                    <br/>
+                    is represented by the &(ampersand).
+
+                </p>
+                <br/><br/><br/><br/>
+            </center>
+        </div>
+
+            
+        </main>
+    
+
+    <footer>
+        <center>
+            <div class="btns">
+                <a id="continue" href="./121.html"> <!--This is supposed to be next lesson in the C course-->
+                    <h2>Continue</h2>
+                </a>
+            </div>
+        </center>
+    </footer>
+
+<script>
+    var std = document.getElementById("stdio");
+    std.textContent = "<stdio.h>";
+</script>
+
+
 </body>
 </html>
