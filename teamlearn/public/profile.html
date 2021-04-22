@@ -172,32 +172,30 @@ myInput.onkeyup = function() {
 <script src='https://cdn.jsdelivr.net/npm/sql.js@0.4.0/js/sql.js'></script>
 <script>
     
-    // Creates the db and table
+    
     var db = new SQL.Database();
-    db.run("CREATE TABLE user_datas (id INTEGER PRIMARY KEY AUTOINCREMENT, item TEXT);");
-  
-    // Expects a todo (string) and inserts in db
-    var insertTodo = function(user_data) {
-      db.run("INSERT INTO user_datas (item) VALUES (?)", [user_data]);  
+    db.run("CREATE TABLE user_data (id INTEGER PRIMARY KEY AUTOINCREMENT, item TEXT);");
+ 
+    var insertData = function(user_data) {
+      db.run("INSERT INTO user_data (item) VALUES (?)", [user_data]);  
     };
   
-    // Return a list of todos (array of strings)
-    var getAllTodos = function() {
-      var results = db.exec("SELECT item FROM user_datas");
+    var getAllData = function() {
+      var results = db.exec("SELECT item FROM user_data");
       var deeta = [];
       for (var i = 0; i < results[0].values.length; i++) {
-        todos.push(results[0].values[i]);
+        user_data.push(results[0].values[i]);
       }
       return deeta;
     };
     
-    // Hooks up the submit button
+    
     var form = document.getElementById("log-form");
     form.addEventListener("submit", function(e) {
 	    
         e.preventDefault();
-        insertTodo(document.getElementById("sign-button").value);
-        displayTodos(getAllTodos());
+        insertData(document.getElementById("sign-button").value);
+        displayData(getAllData());
         form.reset();
 	var usr = document.getElementById("usrname");
 	var id = document.getElementById("profile");   
