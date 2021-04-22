@@ -44,7 +44,30 @@
                     </b> 
                     are used to perform certain actions when a condition is met.
                     <br/>
-                    For example to know when to 
+                    For example to know when someone's old enough to drink or something of that nature.
+                    <br/>
+                    Let's see how translates into code
+                    
+                    <div class="code-snippet">
+                            <pre>
+                                <code>
+                                    #include <span id="stdio"></span>
+
+
+                                    int main(){
+                                        int age = 20;
+
+                                        if(age => 18){
+                                            printf("You are legally old enough to drink");
+                                        }
+
+                                        printf("You are too young to drink");
+
+                                        return 0;
+                                    }
+                                </code>
+                            </pre>
+                    </div>
                 </p>
             </div>
         </main>
