@@ -1,81 +1,126 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"> 
-<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet"> 
-<style>
-/* Style all input fields */
-body{
-font-family:"Ubuntu","Lato", "sans-serif";
-}
-input {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-}
 
-/* Style the submit button */
-input[type=submit] {
-  background-color: #4CAF50;
-  color: white;
-}
-
-/* Style the container for inputs */
-.container {
-  background-color: #f1f1f1;
-  padding: 20px;
-}
-
-/* The message box is shown when the user clicks on the password field */
-#message {
-  display:none;
-  background: #f1f1f1;
-  color: #000;
-  position: relative;
-  padding: 20px;
-  margin-top: 10px;
-}
-
-#message p {
-  padding: 10px 35px;
-  font-size: 18px;
-}
-
-/* Add a green text color and a checkmark when the requirements are right */
-.valid {
-  color: green;
-}
-
-.valid:before {
-  position: relative;
-  left: -35px;
-  content: "👍";
-}
-
-/* Add a red text color and an "x" when the requirements are wrong */
-.invalid {
-  color: red;
-}
-
-.invalid:before {
-  position: relative;
-  left: -35px;
-  content: "👎";
-}
-</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset = "UTF-8"/>
 <title>TeamLearn Log-In</title>
+<style>
+
+body {
+
+font-family: Arial, Helvetica, sans-serif;
+
+background-color: black;
+
+}
+
+* {
+
+box-sizing: border-box;
+
+}
+
+/* Add padding to containers */
+
+.container {
+
+padding: 16px;
+
+background-color: white;
+
+}
+
+/* Full-width input fields */
+
+input[type=text], input[type=password] {
+
+width: 100%;
+
+padding: 15px;
+
+margin: 5px 0 22px 0;
+
+display: inline-block;
+
+border: none;
+
+background: #f1f1f1;
+
+}
+
+input[type=text]:focus, input[type=password]:focus {
+
+background-color: #ddd;
+
+outline: none;
+
+}
+
+/* Overwrite default styles of hr */
+
+hr {
+
+border: 1px solid #f1f1f1;
+
+margin-bottom: 25px;
+
+}
+
+/* Set a style for the submit button */
+
+.registerbtn {
+
+background-color: #4CAF50;
+
+color: white;
+
+padding: 16px 20px;
+
+margin: 8px 0;
+
+border: none;
+
+cursor: pointer;
+
+width: 100%;
+
+opacity: 0.9;
+
+}
+
+.registerbtn:hover {
+
+opacity: 1;
+
+}
+
+/* Add a blue text color to links */
+
+a {
+
+color: dodgerblue;
+
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+
+.signin {
+
+background-color: #f1f1f1;
+
+text-align: center;
+
+}
+
+</style>
+
 </head>
+
 <body>
-    <header>
+<header>
         <nav>
             <div class="topnav">
 		    <a id = "profile">Sign in!
@@ -84,91 +129,45 @@ input[type=submit] {
                 <a href="./learn.html">Learn</a>
                 <a href="./about.html">About</a>
                 <a href="./index.html">Home</a>
+		    <a href = "#" id = "name">Sign in!</a>    
             </div>
         </nav>
     </header>
-    <h1 style = "text-align:center;">Log In To Team-Learn</h1>
-<h2 style = "text-align:center;">Enter in a username and password to proceed.</h2>
+<form action="/action_page.php" id = "log-form">
 
 <div class="container">
-  <form action="/action_page.php" id = "log-form">
-    <label for="usrname">Username</label>
-    <input type="text" id="usrname" name="usrname" required>
 
-    <label for="psw">Password</label>
-    <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
-    
-    <a href="./index.html"><input type="submit" value="Sign In!" id = "sign-button"></a>
-  </form>
+<h1>Register</h1>
+
+<p>Please fill in this form to create an account.</p>
+
+<hr>
+
+<label for="email"><b>Username</b></label>
+
+<input type="text" placeholder="Enter Username" name="usrname" required id = "need">
+
+<label for="psw"><b>Password</b></label>
+
+<input for = "psw" type="password" placeholder="Enter Password" name="psw" required>
+
+<label for="psw-repeat"><b>Confirm Password</b></label>
+
+<input type="password" placeholder="Confirm Password" name="psw-repeat" required>
+
+<hr>
+
+
+<a href = "./index.html"><button type="submit" class="registerbtn" id = "log-button">Log in</button></a>
+<footer>You can find us on <a href = "https://github.com/teamlearncoding" target = "https://github.com/teamlearncoding">Github</a>.</footer>
 </div>
 
-<div id="message">
-  <h3>Your password must contain the following:</h3>
-  <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
-  <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
-  <p id="number" class="invalid">A <b>number</b></p>
-  <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+<div class="container signin">
+
+
 </div>
-				
-<script>
-var myInput = document.getElementById("psw");
-var letter = document.getElementById("letter");
-var capital = document.getElementById("capital");
-var number = document.getElementById("number");
-var length = document.getElementById("length");
 
-// When the user clicks on the password field, show the message box
-myInput.onfocus = function() {
-  document.getElementById("message").style.display = "block";
-}
-
-// When the user clicks outside of the password field, hide the message box
-myInput.onblur = function() {
-  document.getElementById("message").style.display = "none";
-}
-
-// When the user starts to type something inside the password field
-myInput.onkeyup = function() {
-  // Validate lowercase letters
-  var lowerCaseLetters = /[a-z]/g;
-  if(myInput.value.match(lowerCaseLetters)) {  
-    letter.classList.remove("invalid");
-    letter.classList.add("valid");
-  } else {
-    letter.classList.remove("valid");
-    letter.classList.add("invalid");
-  }
-  
-  // Validate capital letters
-  var upperCaseLetters = /[A-Z]/g;
-  if(myInput.value.match(upperCaseLetters)) {  
-    capital.classList.remove("invalid");
-    capital.classList.add("valid");
-  } else {
-    capital.classList.remove("valid");
-    capital.classList.add("invalid");
-  }
-
-  // Validate numbers
-  var numbers = /[0-9]/g;
-  if(myInput.value.match(numbers)) {  
-    number.classList.remove("invalid");
-    number.classList.add("valid");
-  } else {
-    number.classList.remove("valid");
-    number.classList.add("invalid");
-  }
-  
-  // Validate length
-  if(myInput.value.length >= 8) {
-    length.classList.remove("invalid");
-    length.classList.add("valid");
-  } else {
-    length.classList.remove("valid");
-    length.classList.add("invalid");
-  }
-}
-</script>
+</form>
 <script src='https://cdn.jsdelivr.net/npm/sql.js@0.4.0/js/sql.js'></script>
 <script>
     
@@ -191,18 +190,18 @@ myInput.onkeyup = function() {
     
     
     var form = document.getElementById("log-form");
+	var need =  decument.getElementById("need");
+	var name = document.getElementById("name");
     form.addEventListener("submit", function(e) {
 	    
         e.preventDefault();
-        insertData(document.getElementById("sign-button").value);
+        insertData(document.getElementById("log-button").value);
         displayData(getAllData());
-        form.reset();
-	var usr = document.getElementById("usrname");
-	var id = document.getElementById("profile");   
-	id.innerHTML = usr.textContent;      
+        form.reset();  
+	name.textContent = "Hello " + need.textContent + "!";    
     });
     
 </script>
- <footer>You can find us on <a href = "https://github.com/teamlearncoding" target = "https://github.com/teamlearncoding">Github</a>.</footer>
 </body>
+
 </html>
