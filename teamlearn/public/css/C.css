@@ -1,24 +1,24 @@
-#C{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+#C {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-*{
+* {
     font-family: sans-serif;
 }
 
-.courses-main{
+.courses-main {
     text-align: center;
 }
 
-#image-c{
+#image-c {
     border-radius: 50%;
     max-width: 10%;
     max-height: 10%;
-    height:10%;
-    width:10%;
+    height: 10%;
+    width: 10%;
 }
 
-.container-chapters{
+.container-chapters {
     -webkit-box-flex: 1;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -26,22 +26,25 @@
     position: relative;
 }
 
-.chapter{
+.chapter {
     background-color: white;
     border-radius: 10px solid lightblue;
     margin-top: 5em;
 }
 
-
-.vl{
+.vl {
     border-left: 2px solid black;
     height: 2em;
     position: absolute;
     left: 50%;
 }
 
-
-#link-to-chap{
+#link-to-chap {
     text-decoration: none;
     color: black;
+}
+
+#link-to-chap:hover {
+    text-decoration: none;
+    color: aqua;
 }

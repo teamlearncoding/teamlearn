@@ -1,28 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <link rel="apple-touch-icon" type="image/png" href="https://avatars.githubusercontent.com/u/82379321?s=200&v=4" />
+    <link rel="shortcut icon" type="image/x-icon" href="https://avatars.githubusercontent.com/u/82379321?s=200&v=4" />
+    <link rel="mask-icon" type="" href="https://avatars.githubusercontent.com/u/82379321?s=200&v=4" color="#111" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/about.css">
     <script src="./js/index.js"></script>
     <title>TeamLearn-About</title>
 </head>
-<body>
-    <header>
-        <nav>
-            <div class="topnav">
-                <a href="profile.html">Profile</a>
-                <a href="./learn.html">Learn</a>
-                <a class="active" href="./about.html">About</a>
-                <a href="./index.html">Home</a>
-            </div>
-        </nav>
-    </header>
 
+<body>
+
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-black w3-card">
+            <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+            <a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+            <a href="./learn.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Learn</a>
+            <a href="contributor.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Contribute</a>
+            <a href="./about.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">About Us</a>
+            <a href="profile.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Profile</a>
+        </div>
+    </div>
+
+    <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+        <a href="./learn.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Learn</a>
+        <a href="contributor.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Contribute</a>
+        <a href="./about.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">About Us</a>
+        <a href="profile.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Profile</a>
+    </div>
+    <script>
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function myFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
     <main id="main">
-        
+
         <div class="teamlearn-name">
             <h1>
                 <b id="">
@@ -33,32 +60,22 @@
 
         <br/><br/><br/>
 
-        <div class="main-about">
-            <h1 id="about-us-text">About us</h1>
+        <div align="center">
+            <p style="font-size:40px;">About us</p>
 
-            <div class="about-options">
-                <b>
-                    <a href="about.html" id="about-teamlearn" href="about.html">About TeamLearn</a>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <a id="become-contributor-teamlearn" href="contributor.html">Contributing</a>
-                    <hr id="about-options-hr"/>
-                </b>
-            </div>
 
-            <div class="about-text">
+            <div>
                 <h4 id="what-is-teamlearn">
                     A platform where people can learn to code for free
                 </h4>
                 <p>
                     TeamLearn is a platform where people can learn to code for free and reliably.
+                    <br/> It is open-source and licensed under the <a href="https://github.com/teamlearncoding/teamlearn/blob/main/LICENSE.md" id="lisence"><b>GNU General Public License v3.0</b></a>
                     <br/>
-                    It is open-source and licensed under the <a onclick="redirect_to_mit()" href="" style="text-decoration:underline; color:black;">MIT</a> license
-                    <br/>
-                    <br/>
-                    (Soon) a functional <span title="application programming interface"><b>api</b></span>.
+                    <br/> (Soon) a functional <span title="application programming interface"><b>api</b></span>.
                 </p>
             </div>
-            
+
 
         </div>
     </main>
@@ -66,11 +83,12 @@
     <footer>
         <div class="social-media">
             <hr/>
-            <a onclick="redirect_to_ig()" id="ig" href="">
+            <a id="ig" href="https://www.instagram.com/teamlearncodingofficial/">
                 <img src="assets/Images/instagram.png" alt="instagram" id="instagram">
             </a>
             <hr/>
         </div>
     </footer>
 </body>
+
 </html>

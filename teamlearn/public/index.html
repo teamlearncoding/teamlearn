@@ -1,7 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <link rel="apple-touch-icon" type="image/png" href="https://avatars.githubusercontent.com/u/82379321?s=200&v=4" />
+    <link rel="shortcut icon" type="image/x-icon" href="https://avatars.githubusercontent.com/u/82379321?s=200&v=4" />
+    <link rel="mask-icon" type="" href="https://avatars.githubusercontent.com/u/82379321?s=200&v=4" color="#111" />
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
@@ -10,20 +18,40 @@
     <!--<script src="../../js/navbar.js"></script><-->
     <title>TeamLearn</title>
 </head>
+
 <body>
-    <header>
-        <nav>
-            <div class="topnav">
-                <a href="profile.html">Profile</a>
-                <a href="./learn.html">Learn</a>
-                <a href="./about.html">About</a>
-                <a class="active" href="./index.html">Home</a>
-            </div>
-        </nav>
-    </header>
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-black w3-card">
+            <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+            <a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+            <a href="./learn.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Learn</a>
+            <a href="contributor.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Contribute</a>
+            <a href="./about.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">About Us</a>
+            <a href="profile.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Profile</a>
+        </div>
+    </div>
+
+    <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+        <a href="./learn.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Learn</a>
+        <a href="contributor.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Contribute</a>
+        <a href="./about.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">About Us</a>
+        <a href="profile.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Profile</a>
+    </div>
+    <script>
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function myFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script><br><br>
 
     <main>
-        <div class="main">
+        <div align="center">
             <div class="main-logo-name">
                 <h1>
                     <b class="name">
@@ -44,13 +72,13 @@
 
             <br/>
 
-            <div class="button-start-learning">
+            <div>
                 <a class="btn" href="./learn.html" style="background-color:#4e9af1">Get Started</a>
             </div>
         </div>
 
         <div class="container-buttons">
-            <a class="overview-btn" href="" style="background-color: orange;">Overview</a>
+            <a class="overview-btn" href="about.html" style="background-color: orange;">Overview</a>
             <a href="index2.html" class="courses-btn" href="" style="background-color: orange;">Courses</a>
         </div>
 
@@ -59,15 +87,13 @@
         <article class="overview">
             <p>
                 TeamLearn's courses are created by the founder(me)
-                <br/>
-                and by the contributors
+                <br/> and by the contributors
                 <br/>
             </p>
 
             <p>
                 If you want to contribute to the website by fixing bugs,
-                <br/>
-                adding courses or whatnot. You can by clicking <a id="contributing-link" href="https://github.com/teamlearncoding/teamlearn">here</a>
+                <br/> adding courses or whatnot. You can by clicking <a id="contributing-link" href="https://github.com/teamlearncoding/teamlearn">here</a>
             </p>
         </article>
 
@@ -75,7 +101,7 @@
 
         </div>
     </main>
-    
+
 
 
     <footer>
@@ -86,10 +112,10 @@
             <h3>Brief history of TeamLearn</h3>
 
             <p id="bottom-description">
-                TeamLearn was founded by <b><a onclick="redirect_to_repo()" id="founder" href="">Arin Grigoras</a></b><br/>
-                    He tried to make a website where people could learn how to code<br/>as long as they had an internet connection.
+                TeamLearn was founded by <b><a href="https://github.com/koreaneggroll" id="founder" >Arin Grigoras</a></b><br/> He tried to make a website where people could learn how to code<br/>as long as they had an internet connection.
             </p>
         </div>
     </footer>
 </body>
+
 </html>
