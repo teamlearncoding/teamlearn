@@ -1,25 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <link rel="apple-touch-icon" type="image/png" href="https://avatars.githubusercontent.com/u/82379321?s=200&v=4" />
+    <link rel="shortcut icon" type="image/x-icon" href="https://avatars.githubusercontent.com/u/82379321?s=200&v=4" />
+    <link rel="mask-icon" type="" href="https://avatars.githubusercontent.com/u/82379321?s=200&v=4" color="#111" />
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/learn.css">
     <title>TeamLearn-Learn</title>
 </head>
-<body>
-    <header>
-        <nav>
-            <div class="topnav">
-                <a href="profile.html">Profile</a>
-                <a class="active" href="./learn.html">Learn</a>
-                <a href="./about.html">About</a>
-                <a href="./index.html">Home</a>
-            </div>
-        </nav>
-    </header>
 
+<body>
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-black w3-card">
+            <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+            <a href="./index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+            <a href="./learn.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Learn</a>
+            <a href="./contributor.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Contribute</a>
+            <a href="./about.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">About Us</a>
+            <a href="./profile.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Profile</a>
+            <a href="./faq.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">FAQ</a>
+        </div>
+    </div>
+
+    <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+        <a href="./learn.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Learn</a>
+        <a href="contributor.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Contribute</a>
+        <a href="./about.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">About Us</a>
+        <a href="profile.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Profile</a>
+        <a href="./faq.html" class="w3-bar-item-23-button we-padding-large we-hide-small" onclick="myFunction()">FAQ</a>
+    </div>
+    <script>
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function myFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
     <br/>
     <br/>
     <br/>
@@ -27,15 +56,14 @@
     <main>
 
         <div class="what-courses">
-            <h1>What do you want to improve on?</h1>
+            <h1>What do you want to learn?</h1>
         </div>
 
         <center>
             <div class="course">
-                <a style="text-decoration: none; color:black"  href="./lessons/C/C.html">
+                <a style="text-decoration: none; color:black" href="./lessons/C/C.html">
                     <img id="c" src="assets/Images/logo-c-1.png" alt="c-img">
-                    <p>This course was created by:<br/>
-                    @koreaneggroll & @MrGithub2021
+                    <p>This course was created by:<br/> @koreaneggroll & @MrGithub2021
                     </p>
                 </a>
             </div>
@@ -47,4 +75,5 @@
 
     </footer>
 </body>
+
 </html>

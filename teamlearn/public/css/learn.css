@@ -1,4 +1,4 @@
-#c{
+#c {
     max-width: 250%;
     max-height: 250%;
     border-radius: 55px;
@@ -8,12 +8,22 @@
     height: 10%;
 }
 
-.what-courses{
+#c:hover {
+    max-width: 250%;
+    max-height: 250%;
+    border-radius: 55px;
+    border: 2px solid #bbf3ff;
+    padding: 20px;
+    width: 10%;
+    height: 10%;
+}
+
+.what-courses {
     font-family: sans-serif;
     text-align: center;
 }
 
-#python{
+#python {
     max-width: 300%;
     max-height: 300%;
     border-radius: 55px;
@@ -23,7 +33,7 @@
     height: 245%;
 }
 
-.course-main-page{
+.course-main-page {
     margin-left: 6em;
     display: flex;
     flex-direction: column;
@@ -31,13 +41,13 @@
     align-items: center;
 }
 
-.course-link-main-page{
+.course-link-main-page {
     font-family: serif;
     text-decoration: none;
     color: black;
 }
 
-.course-link-main-page{
+.course-link-main-page {
     text-decoration: none;
     color: inherit;
     cursor: pointer;
@@ -46,12 +56,12 @@
     height: 100%;
 }
 
-.course-overview{
+.course-overview {
     align-items: center;
-    font-family:monospace;
+    font-family: monospace;
 }
 
-.course-goto-link-btn{
+.course-goto-link-btn {
     padding: 15px 22px;
     background: #1ABC9C;
     border-radius: 100px;
@@ -67,22 +77,19 @@
     font-family: sans-serif
 }
 
-
-.course-goto-link-btn:hover{
+.course-goto-link-btn:hover {
     background: white;
     color: black;
     border: 2px solid #1ABC9C;
     transition: all 0.7s;
-    
 }
 
-
-.container-all-courses{
-    display:grid;
+.container-all-courses {
+    display: grid;
     grid-template-columns: min-content;
 }
 
-#course-link{
+#course-link {
     text-decoration: none;
     color: inherit;
     cursor: pointer;
@@ -91,8 +98,7 @@
     height: 100%;
 }
 
-
-#learn-course-img{
+#learn-course-img {
     max-width: 100%;
     max-height: 100%;
     border-radius: 55px;
@@ -102,42 +108,38 @@
     height: 100%;
 }
 
-
-.learn-course ul{
+.learn-course ul {
     list-style: none;
     display: inline;
 }
 
-.learn-course{
+.learn-course {
     margin-left: 6em;
 }
 
-
-.c-course{
+.c-course {
     margin-left: 10em;
     margin: 50px;
 }
 
-
-.course-c-container{
+.course-c-container {
     text-align: center;
     font-family: sans-serif;
     font-weight: 200;
 }
 
-
-
 #leftbox {
-    float:left; 
-}
-#middlebox{
-    float:left; 
-}
-#rightbox{
-    float:right;
+    float: left;
 }
 
+#middlebox {
+    float: left;
+}
 
-.python-course{
-    display:block;
+#rightbox {
+    float: right;
+}
+
+.python-course {
+    display: block;
 }

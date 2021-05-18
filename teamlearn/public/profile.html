@@ -3,205 +3,193 @@
 <html>
 
 <head>
+    <link rel="apple-touch-icon" type="image/png" href="https://avatars.githubusercontent.com/u/82379321?s=200&v=4" />
+    <link rel="shortcut icon" type="image/x-icon" href="https://avatars.githubusercontent.com/u/82379321?s=200&v=4" />
+    <link rel="mask-icon" type="" href="https://avatars.githubusercontent.com/u/82379321?s=200&v=4" color="#111" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta charset = "UTF-8"/>
-<title>TeamLearn Log-In</title>
-<style>
-
-body {
-
-font-family: Arial, Helvetica, sans-serif;
-
-background-color: black;
-
-}
-
-* {
-
-box-sizing: border-box;
-
-}
-
-/* Add padding to containers */
-
-.container {
-
-padding: 16px;
-
-background-color: white;
-
-}
-
-/* Full-width input fields */
-
-input[type=text], input[type=password] {
-
-width: 100%;
-
-padding: 15px;
-
-margin: 5px 0 22px 0;
-
-display: inline-block;
-
-border: none;
-
-background: #f1f1f1;
-
-}
-
-input[type=text]:focus, input[type=password]:focus {
-
-background-color: #ddd;
-
-outline: none;
-
-}
-
-/* Overwrite default styles of hr */
-
-hr {
-
-border: 1px solid #f1f1f1;
-
-margin-bottom: 25px;
-
-}
-
-/* Set a style for the submit button */
-
-.registerbtn {
-
-background-color: #4CAF50;
-
-color: white;
-
-padding: 16px 20px;
-
-margin: 8px 0;
-
-border: none;
-
-cursor: pointer;
-
-width: 100%;
-
-opacity: 0.9;
-
-}
-
-.registerbtn:hover {
-
-opacity: 1;
-
-}
-
-/* Add a blue text color to links */
-
-a {
-
-color: dodgerblue;
-
-}
-
-/* Set a grey background color and center the text of the "sign in" section */
-
-.signin {
-
-background-color: #f1f1f1;
-
-text-align: center;
-
-}
-
-</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <title>TeamLearn Log-In</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: black;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        /* Add padding to containers */
+        
+        .container {
+            padding: 16px;
+            background-color: white;
+        }
+        /* Full-width input fields */
+        
+        input[type=text],
+        input[type=password] {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: #f1f1f1;
+        }
+        
+        input[type=text]:focus,
+        input[type=password]:focus {
+            background-color: #ddd;
+            outline: none;
+        }
+        /* Overwrite default styles of hr */
+        
+        hr {
+            border: 1px solid #f1f1f1;
+            margin-bottom: 25px;
+        }
+        /* Set a style for the submit button */
+        
+        .registerbtn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 16px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+        }
+        
+        .registerbtn:hover {
+            opacity: 1;
+        }
+        /* Add a blue text color to links */
+        
+        a {
+            color: dodgerblue;
+        }
+        /* Set a grey background color and center the text of the "sign in" section */
+        
+        .signin {
+            background-color: #f1f1f1;
+            text-align: center;
+        }
+        
+        #link {
+            text-decoration: none;
+            color: black;
+        }
+        
+        #link:hover {
+            transition: all 0.2s;
+            color: aqua;
+        }
+    </style>
 
 </head>
 
 <body>
-<header>
-        <nav>
-            <div class="topnav">
-		    <a id = "profile">Sign in!
-		    </a>    
-                <a class="active" href="profile.html">Profile</a>
-                <a href="./learn.html">Learn</a>
-                <a href="./about.html">About</a>
-                <a href="./index.html">Home</a>
-		    <a href = "#" id = "name">Sign in!</a>    
-            </div>
-        </nav>
-    </header>
-<form action="/action_page.php" id = "log-form">
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-black w3-card">
+            <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+            <a href="./index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+            <a href="./learn.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Learn</a>
+            <a href="./contributor.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Contribute</a>
+            <a href="./about.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">About Us</a>
+            <a href="./profile.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Profile</a>
+            <a href="./faq.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">FAQ</a>
+        </div>
+    </div>
 
-<div class="container">
+    <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+        <a href="./learn.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Learn</a>
+        <a href="contributor.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Contribute</a>
+        <a href="./about.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">About Us</a>
+        <a href="profile.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Profile</a>
+        <a href="./faq.html" class="w3-bar-item-23-button we-padding-large we-hide-small" onclick="myFunction()">FAQ</a>
+    </div>
+    <script>
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function myFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script><br>
+    <form action="/action_page.php" id="log-form">
 
-<h1>Register</h1>
+        <div class="container">
 
-<p>Please fill in this form to create an account.</p>
+            <h1>Register</h1>
 
-<hr>
+            <p>Please fill in this form to create an account.</p>
 
-<label for="email"><b>Username</b></label>
+            <hr>
 
-<input type="text" placeholder="Enter Username" name="usrname" required id = "need">
+            <label for="email"><b>Username</b></label>
 
-<label for="psw"><b>Password</b></label>
+            <input type="text" placeholder="Enter Username" name="usrname" required id="need">
 
-<input for = "psw" type="password" placeholder="Enter Password" name="psw" required>
+            <label for="psw"><b>Password</b></label>
 
-<label for="psw-repeat"><b>Confirm Password</b></label>
+            <input for="psw" type="password" placeholder="Enter Password" name="psw" required>
 
-<input type="password" placeholder="Confirm Password" name="psw-repeat" required>
+            <label for="psw-repeat"><b>Confirm Password</b></label>
 
-<hr>
+            <input type="password" placeholder="Confirm Password" name="psw-repeat" required>
 
-
-<a href = "./index.html"><button type="submit" class="registerbtn" id = "log-button">Log in</button></a>
-<footer>You can find us on <a href = "https://github.com/teamlearncoding" target = "https://github.com/teamlearncoding">Github</a>.</footer>
-</div>
-
-<div class="container signin">
+            <hr>
 
 
-</div>
+            <a href="./index.html"><button type="submit" class="registerbtn" id = "log-button">Log in</button></a>
+            <footer>You can find us on <a href="https://github.com/teamlearncoding" id="link"><b>Github</b></a>.</footer>
+        </div>
 
-</form>
-<script src='https://cdn.jsdelivr.net/npm/sql.js@0.4.0/js/sql.js'></script>
-<script>
-    
-    
-    var db = new SQL.Database();
-    db.run("CREATE TABLE user_data (id INTEGER PRIMARY KEY AUTOINCREMENT, item TEXT);");
- 
-    var insertData = function(user_data) {
-      db.run("INSERT INTO user_data (item) VALUES (?)", [user_data]);  
-    };
-  
-    var getAllData = function() {
-      var results = db.exec("SELECT item FROM user_data");
-      var deeta = [];
-      for (var i = 0; i < results[0].values.length; i++) {
-        user_data.push(results[0].values[i]);
-      }
-      return deeta;
-    };
-    
-    
-    var form = document.getElementById("log-form");
-	var need =  decument.getElementById("need");
-	var name = document.getElementById("name");
-    form.addEventListener("submit", function(e) {
-	    
-        e.preventDefault();
-        insertData(document.getElementById("log-button").value);
-        displayData(getAllData());
-        form.reset();  
-	name.textContent = "Hello " + need.textContent + "!";    
-    });
-    
-</script>
+        <div class="container signin">
+
+
+        </div>
+
+    </form>
+    <script src='https://cdn.jsdelivr.net/npm/sql.js@0.4.0/js/sql.js'></script>
+    <script>
+        var db = new SQL.Database();
+        db.run("CREATE TABLE user_data (id INTEGER PRIMARY KEY AUTOINCREMENT, item TEXT);");
+
+        var insertData = function(user_data) {
+            db.run("INSERT INTO user_data (item) VALUES (?)", [user_data]);
+        };
+
+        var getAllData = function() {
+            var results = db.exec("SELECT item FROM user_data");
+            var deeta = [];
+            for (var i = 0; i < results[0].values.length; i++) {
+                user_data.push(results[0].values[i]);
+            }
+            return deeta;
+        };
+
+
+        var form = document.getElementById("log-form");
+        var need = decument.getElementById("need");
+        var name = document.getElementById("name");
+        form.addEventListener("submit", function(e) {
+
+            e.preventDefault();
+            insertData(document.getElementById("log-button").value);
+            displayData(getAllData());
+            form.reset();
+            name.textContent = "Hello " + need.textContent + "!";
+        });
+    </script>
 </body>
 
 </html>
